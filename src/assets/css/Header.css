@@ -1,31 +1,21 @@
-#header {
+.header {
     width: 100%;
-    height: 125px;
+    height: 100px;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
-    flex-direction: column; /* Apila los hijos verticalmente */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: da un poco de profundidad */
-    z-index: 1000; /* Para que esté por encima de otros elementos */
-    background-color: #242424;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: #11aff6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-#divTexto {
+.labelBar {
     width: 100%;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
     background-color: #003d4c;
     color: #fff;
-}
-
-#logo {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
-    color: #11aff6;
-}
-
-#title {
-    font-size: 30px; /* O ajusta según tu diseño */
+    justify-content: center;
+    align-items: center;
 }

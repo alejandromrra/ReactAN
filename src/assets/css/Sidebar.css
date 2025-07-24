@@ -5,10 +5,9 @@
 .offcanvas {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: white !important;
 }
 .offcanvas.offcanvas-end {
-    background-color: #242424;
+    background-color: #1e1e1e;
     position: static !important;
     transform: none !important;
     visibility: visible !important;
@@ -17,4 +16,11 @@
 }
 .navbar-toggler {
     display: none;
+}
+
+a {
+    color: white !important;
+}
+h1 {
+    color: white !important;
 }

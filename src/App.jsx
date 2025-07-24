@@ -1,22 +1,22 @@
+import { Routes, Route } from 'react-router-dom';
+import React from "react";
+
 // CSS
 import './App.css'
 
-// Componentes
-import Header from "./components/Header.jsx";
-import Sidebar from "./components/Sidebar.jsx";
-import PageContent from "./components/PageContent.jsx";
+// Page
+import Layout from "./components/Layout.jsx";
+import AccessLevel from "./pages/AccessLevel/AccessLevel.jsx";
 
 function App() {
     return (
-        <div>
-            <Header />
-            <div className="container-fluid app-fluid">
-                <div className="row app-row">
-                    <Sidebar />
-                    <PageContent />
-                </div>
-            </div>
-        </div>
+        <React.Fragment>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route path="accessLevel" element={<AccessLevel />} />
+                </Route>
+            </Routes>
+        </React.Fragment>
     )
 }
 

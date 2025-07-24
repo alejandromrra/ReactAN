@@ -1,0 +1,12 @@
+.app-fluid {
+    height: calc(100vh - 125px);
+    background-color: #242424;
+}
+
+.app-row {
+    height: 100%;
+}
+
+main {
+    color: white;
+}

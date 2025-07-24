@@ -1,19 +1,13 @@
-import React, {Component} from "react";
+import React from "react";
+
+// CSS
 import "/src/assets/css/Header.css"
 
 const Header = () => {
     return (
-        <header id="header">
-            <div id="logo">
-                <h1 id="title">
-                    SaimaPay Gateway
-                </h1>
-            </div>
-            <div id="divTexto">
-                <span id="texto">
-                    LABORATORY
-                </span>
-            </div>
+        <header className="header d-flex justify-content-between align-items-center p-3 border-bottom">
+            <h1 className="title h3 m-0">SaimaPay Gateway</h1>
+            <span className="labelBar">LABORATORY</span>
         </header>
     )
 }
