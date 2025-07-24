@@ -8,12 +8,23 @@ const Sidebar = () => {
     const { pathname } = useLocation();
 
     const commonLinks = [
-        { path: '/', label: 'Inicio' },
+        { path: '/', label: 'Admin Section' },
         { path: '/accessLevel', label: 'Access Level' },
+        { path: '/', label: 'Card List' },
+        { path: '/', label: 'Card Routes' },
+        { path: '/', label: 'Commerce Numbers' },
+        { path: '/', label: 'Commissions' },
+        { path: '/', label: 'Pinpads' },
+        { path: '/', label: 'Report and Graphics' },
+        { path: '/', label: 'Terminals' },
+        { path: '/', label: 'Totals' },
+        { path: '/', label: 'Transactions' },
+        { path: '/', label: 'Users' },
+        { path: '/', label: 'Log out' },
     ];
 
     const accessLevelLinks = [
-        { path: '', label: '<--' },
+        { path: '', label: 'Inicio' },
         { path: '/accessLevel/find', label: 'Find Access Level' },
         { path: '/accessLevel/new', label: 'New Access Level' },
         { path: '/accessLevel/map', label: 'Access Level Map' },
@@ -27,7 +38,7 @@ const Sidebar = () => {
     const page = pathname.startsWith('/accessLevel') ? "Access Level" : "";
 
     return (
-        <aside className="navbar col-md-3">
+        <aside className="navbar col-md-3" key={page}>
             <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar"
                  aria-labelledby="offcanvasNavbarLabel">
                 <div className="offcanvas-body">
