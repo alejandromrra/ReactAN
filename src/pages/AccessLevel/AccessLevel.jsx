@@ -12,7 +12,7 @@ const AccessLevel = () => {
 
     useEffect(() => {
         fetchAccessLevels();
-    });
+    }, [page]);
 
     const fetchAccessLevels = async () => {
         try {
