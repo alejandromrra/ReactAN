@@ -6,24 +6,19 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 
 // CSS
-import "/src/assets/css/Layout.css";
+import "/src/assets/css/components/Layout.css";
 
 const Layout = () => {
     const { pathname } = useLocation();
 
-    function showHeader() {
-        if (pathname === '/') return <Header />;
-    }
-
     return (
         <React.Fragment>
-            {/*{showHeader()}*/}
-            <Header />
+            <Header/>
             <div className="container-fluid app-fluid">
                 <div className="row app-row">
-                    <Sidebar />
-                    <main className="col-md-9">
-                        <Outlet />
+                    <Sidebar/>
+                    <main className="col-md-9" id={pathname === "/accessLevel/new" ? "createAccessLevel" : "test"}>
+                        <Outlet/>
                     </main>
                 </div>
             </div>

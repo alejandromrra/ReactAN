@@ -1,7 +1,7 @@
 import React from "react";
 
 // CSS
-import "/src/assets/css/Header.css"
+import "/src/assets/css/components/Header.css"
 
 const Header = () => {
     return (

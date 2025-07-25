@@ -9,13 +9,12 @@
     overflow: hidden;
 }
 
-#typeFilter,
-#belongsToFilter,
-#resultsFilter {
+select {
     background-color: #1e1e1e !important;
     color: white !important;
+    height: 40px !important;
 }
 
 button {
-    height: 34px;
+    height: 35px !important;
 }

@@ -1,0 +1,19 @@
+form {
+    width: 65%;
+    border-radius: 5px;
+    padding: 70px 60px;
+    background-color: #1e1e1e !important;
+}
+.formCreateAccessLevel select,
+.formCreateAccessLevel input {
+    background-color: #1e1e1e !important;
+    color: white !important;
+    height: 50px !important;
+}
+input::-webkit-input-placeholder {
+    color: white !important;
+    opacity: 0.2 !important;
+}
+.buttonsCreateAccessLevel button {
+    height: 45px !important;
+}
