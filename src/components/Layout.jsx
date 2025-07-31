@@ -17,7 +17,7 @@ const Layout = () => {
             <div className="container-fluid app-fluid">
                 <div className="row app-row">
                     <Sidebar/>
-                    <main className="col-md-9" id={pathname === "/accessLevel/new" ? "createAccessLevel" : "test"}>
+                    <main className="col-md-9" id={pathname.includes("/accessLevel/") ? "createAccessLevel" : ""}>
                         <Outlet/>
                     </main>
                 </div>

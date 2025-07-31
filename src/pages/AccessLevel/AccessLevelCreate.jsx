@@ -4,8 +4,8 @@ import React, {useState} from "react";
 import "/src/assets/css/AccessLevel/AccessLevelCreate.css"
 
 // JS
-import { createAccessLevel } from '../../services/accessLevelService.js';
-import { AccessLevelModel } from '../../models/accessLevel.js';
+import {createAccessLevel} from '../../services/accessLevelService.js';
+import {AccessLevelModel} from '../../models/AccessLevel/accessLevel.js';
 
 const AccessLevelCreate = () => {
     const [formData, setFormData] = useState(AccessLevelModel);
@@ -19,14 +19,14 @@ const AccessLevelCreate = () => {
         e.preventDefault();
 
         try {
-            const res = await createAccessLevel();
+            const res = await createAccessLevel(formData);
             console.log(res);
         } catch (err) {
             console.log(err);
         }
     };
 
-    return (
+    return (<React.Fragment>
         <form className="row formCreateAccessLevel" onSubmit={handleSubmit}>
             <div className="col-8">
                 <label htmlFor="name">Name</label>
@@ -109,16 +109,13 @@ const AccessLevelCreate = () => {
                 </select>
             </div>
 
-            <div className="col-12 mt-5 buttonsCreateAccessLevel">
+            <div className="col-12 mt-5">
                 <button className="btn btn-primary w-100" type="submit">
                     Guardar Access Level
                 </button>
-                <button className="btn btn-danger w-100 mt-3" type="submit">
-                    Cancela Proceso
-                </button>
             </div>
         </form>
-    )
+    </React.Fragment>)
 }
 
 export default AccessLevelCreate;

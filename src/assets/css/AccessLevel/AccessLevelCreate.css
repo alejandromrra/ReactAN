@@ -1,19 +1,37 @@
-form {
+.formCreateAccessLevel {
     width: 65%;
     border-radius: 5px;
     padding: 70px 60px;
-    background-color: #1e1e1e !important;
+    background-color: #1e1e1e;
 }
 .formCreateAccessLevel select,
-.formCreateAccessLevel input {
-    background-color: #1e1e1e !important;
-    color: white !important;
-    height: 50px !important;
+.formCreateAccessLevel select:focus,
+.formCreateAccessLevel input,
+.formCreateAccessLevel input:focus {
+    background-color: #1e1e1e;
+    color: white;
+    height: 50px;
 }
-input::-webkit-input-placeholder {
-    color: white !important;
-    opacity: 0.2 !important;
+.formCreateAccessLevel input::-webkit-input-placeholder {
+    color: white;
+    opacity: 0.2;
 }
-.buttonsCreateAccessLevel button {
-    height: 45px !important;
+.formCreateAccessLevel button {
+    height: 70px;
+}
+
+.alert {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    min-width: 300px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.alertHover {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1040;
+    cursor: not-allowed;
 }

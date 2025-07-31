@@ -9,7 +9,7 @@ const Sidebar = () => {
 
     const navLinks = [
         {
-            match: (path) => path.startsWith('/accessLevel/new'),
+            match: (path) => path.startsWith('/accessLevel/'),
             page: 'Add Access Level',
             links: [
                 { path: '/accessLevel', label: 'List Access Levels' },
@@ -39,17 +39,17 @@ const Sidebar = () => {
             links: [
                 { path: '/a', label: 'Admin Section' },
                 { path: '/accessLevel', label: 'Access Level' },
-                { path: '/a', label: 'Card List' },
-                { path: '/a', label: 'Card Routes' },
-                { path: '/a', label: 'Commerce Numbers' },
-                { path: '/a', label: 'Commissions' },
-                { path: '/a', label: 'Pinpads' },
-                { path: '/a', label: 'Report and Graphics' },
-                { path: '/a', label: 'Terminals' },
-                { path: '/a', label: 'Totals' },
-                { path: '/a', label: 'Transactions' },
-                { path: '/a', label: 'Users' },
-                { path: '/a', label: 'Log out' },
+                { path: '/b', label: 'Card List' },
+                { path: '/c', label: 'Card Routes' },
+                { path: '/d', label: 'Commerce Numbers' },
+                { path: '/e', label: 'Commissions' },
+                { path: '/f', label: 'Pinpads' },
+                { path: '/g', label: 'Report and Graphics' },
+                { path: '/h', label: 'Terminals' },
+                { path: '/i', label: 'Totals' },
+                { path: '/j', label: 'Transactions' },
+                { path: '/k', label: 'Users' },
+                { path: '/l', label: 'Log out' },
             ],
         }
     ];
@@ -61,7 +61,7 @@ const Sidebar = () => {
             <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar"
                  aria-labelledby="offcanvasNavbarLabel">
                 <div className="offcanvas-body">
-                    {pathname !== "/" && <h1 className="mb-5">{page}</h1>}
+                    {pathname !== "/" && <h1 className="sidebarTitle mb-5">{page}</h1>}
 
                     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                         {links.map(({ path, label }, index) => (

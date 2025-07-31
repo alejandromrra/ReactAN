@@ -1,20 +1,22 @@
-.tableColor td, .tableColor th {
-    background-color: #1e1e1e !important;
-    color: white !important;
-    border-style: none !important;
-}
-.tableColor {
+#tableAccessLevels {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     overflow: hidden;
 }
+#tableAccessLevels td, #tableAccessLevels th {
+    background-color: #1e1e1e;
+    color: white;
+    border-style: none;
+}
 
-select {
-    background-color: #1e1e1e !important;
-    color: white !important;
-    height: 40px !important;
+#typeFilter,
+#belongsToFilter,
+#resultsFilter {
+    background-color: #1e1e1e;
+    color: white;
+    height: 40px;
 }
 
 button {
-    height: 35px !important;
+    height: 35px;
 }

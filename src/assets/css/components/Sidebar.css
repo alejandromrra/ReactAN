@@ -18,9 +18,10 @@
     display: none;
 }
 
-a {
-    color: white !important;
+.sidebarTitle {
+    color: white;
 }
-h1 {
-    color: white !important;
+
+.nav-item .nav-link {
+    color: white;
 }

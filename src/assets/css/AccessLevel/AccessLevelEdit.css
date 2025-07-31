@@ -1,0 +1,21 @@
+.formEditAccessLevel {
+    width: 65%;
+    border-radius: 5px;
+    padding: 70px 60px;
+    background-color: #1e1e1e;
+}
+.formEditAccessLevel select,
+.formEditAccessLevel select:focus,
+.formEditAccessLevel input,
+.formEditAccessLevel input:focus {
+    background-color: #1e1e1e;
+    color: white;
+    height: 50px;
+}
+.formEditAccessLevel input::-webkit-input-placeholder {
+    color: white;
+    opacity: 0.2;
+}
+.formEditAccessLevel button {
+    height: 70px;
+}

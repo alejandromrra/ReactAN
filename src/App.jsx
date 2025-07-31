@@ -17,7 +17,7 @@ function App() {
                 <Route path="/" element={<Layout />}>
                     <Route path="accessLevel" element={<AccessLevel />} />
                     <Route path="accessLevel/new" element={<AccessLevelCreate />} />
-                    <Route path="accessLevel/edit" element={<AccessLevelEdit />} />
+                    <Route path="accessLevel/edit/:id" element={<AccessLevelEdit />} />
                 </Route>
             </Routes>
         </React.Fragment>

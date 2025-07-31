@@ -1,8 +1,11 @@
 import {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
 // CSS
 import "/src/assets/css/AccessLevel/AccessLevel.css"
-import {getAccessLevel} from "../../services/accessLevelService.js";
+
+// JS
+import {getAccessLevels} from "../../services/accessLevelService.js";
 
 const AccessLevel = () => {
     const [accessLevels, setAccessLevels] = useState([]);
@@ -11,29 +14,27 @@ const AccessLevel = () => {
     const limit = 10;
 
     useEffect(() => {
-        fetchAccessLevels();
+        (async () => {
+            try {
+                const res = await getAccessLevels(page, limit);
+                setAccessLevels(res.data.data);
+                setTotalCount(res.data.totalCount);
+            } catch (err) {
+                console.error('Error fetching data:', err);
+            }
+        })();
     }, [page]);
-
-    const fetchAccessLevels = async () => {
-        try {
-            const res = await getAccessLevel(page, limit);
-            setAccessLevels(res.data.data);
-            setTotalCount(res.data.totalCount);
-        } catch (err) {
-            console.error('Error fetching data:', err);
-        }
-    };
 
     const totalPages = Math.ceil(totalCount / limit);
 
     return (
         <div className="row">
-            <section className="row mt-4">
+            <section className="row mt-5 mb-3">
                 <div className="col-12">
                     <div className="row">
                         <div className="col-4">
                             <label htmlFor="typeFilter">Type</label>
-                            <select className="form-control" name="" id="typeFilter">
+                            <select className="form-control" name="typeFilter" id="typeFilter">
                                 <option value="">Selecciona un filtro</option>
                                 <option value="test1">test1</option>
                                 <option value="test2">test2</option>
@@ -42,7 +43,7 @@ const AccessLevel = () => {
                         </div>
                         <div className="col-5">
                             <label htmlFor="belongsToFilter">Belongs to</label>
-                            <select className="form-control" name="" id="belongsToFilter">
+                            <select className="form-control" name="belongsToFilter" id="belongsToFilter">
                                 <option value="">Selecciona un filtro</option>
                                 <option value="test1">test1</option>
                                 <option value="test2">test2</option>
@@ -51,7 +52,7 @@ const AccessLevel = () => {
                         </div>
                         <div className="col-3">
                             <label htmlFor="resultsFilter">Result per page</label>
-                            <select className="form-control" name="" id="resultsFilter">
+                            <select className="form-control" name="resultsFilter" id="resultsFilter">
                                 <option value="">Selecciona un filtro</option>
                                 <option value="10">10</option>
                                 <option value="20">20</option>
@@ -65,7 +66,7 @@ const AccessLevel = () => {
             <section className="row mt-5">
                 <div className="col-12">
                     <div className="table-responsive">
-                        <table className="table tableColor">
+                        <table className="table" id="tableAccessLevels">
                             <thead>
                             <tr>
                                 <th scope="col">Name</th>
@@ -76,20 +77,20 @@ const AccessLevel = () => {
                             </tr>
                             </thead>
                             <tbody className="table-group-divider">
-                            {accessLevels.map(({ name, type, numTransaction, accessLevel }) => (
-                                <tr>
+                            {accessLevels.map(({ id, name, type, numTransaction, accessLevel }) => (
+                                <tr key={id}>
                                     <td>{name}</td>
                                     <td>{type}</td>
                                     <td>{numTransaction}</td>
                                     <td>{accessLevel}</td>
                                     <td>
                                         <div className="container-fluid">
-                                            <button className="form-control btn btn-primary w-25">
+                                            <Link to={`/accessLevel/view/${id}`} className="linkButton form-control btn btn-sm btn-outline-primary w-25 ms-2">
                                                 View
-                                            </button>
-                                            <button className="form-control btn btn-secondary w-25 ms-2">
+                                            </Link>
+                                            <Link to={`/accessLevel/edit/${id}`} className="linkButton form-control btn btn-sm btn-outline-primary w-25 ms-2">
                                                 Edit
-                                            </button>
+                                            </Link>
                                         </div>
                                     </td>
                                 </tr>
