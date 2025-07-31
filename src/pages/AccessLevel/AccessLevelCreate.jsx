@@ -37,10 +37,11 @@ const AccessLevelCreate = () => {
                 <label htmlFor="type">Type</label>
                 <select className="form-control" name="type" id="type"
                         value={formData.type} onChange={handleChange}>
-                    <option value="">Selecciona un filtro</option>
-                    <option value="test1">test1</option>
-                    <option value="test2">test2</option>
-                    <option value="test3">test3</option>
+                    <option value="">Selecciona un type</option>
+                    <option value="brand">Brand</option>
+                    <option value="company">Company</option>
+                    <option value="group">Group</option>
+                    <option value="seller">Seller</option>
                 </select>
             </div>
             <div className="col-6 mt-3">
@@ -62,47 +63,44 @@ const AccessLevelCreate = () => {
                 <label htmlFor="donation">Donation</label>
                 <select className="form-control" name="donation" id="donation"
                         value={formData.donation} onChange={handleChange}>
-                    <option value="">Selecciona un filtro</option>
-                    <option value="test1">test1</option>
-                    <option value="test2">test2</option>
-                    <option value="test3">test3</option>
+                    <option value="">Selecciona un donation</option>
+                    <option value="default">Default</option>
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
                 </select>
             </div>
             <div className="col-3 mt-3">
                 <label htmlFor="report">Report</label>
                 <select className="form-control" name="report" id="report"
                         value={formData.report} onChange={handleChange}>
-                    <option value="">Selecciona un filtro</option>
-                    <option value="test1">test1</option>
-                    <option value="test2">test2</option>
-                    <option value="test3">test3</option>
+                    <option value="">Selecciona un report</option>
+                    <option value="disabled">Disabled</option>
+                    <option value="enabled">Enabled</option>
                 </select>
             </div>
             <div className="col-3 mt-3">
                 <label htmlFor="getFunds">Refund: Get funds from</label>
                 <select className="form-control" name="getFunds" id="getFunds"
                         value={formData.getFunds} onChange={handleChange}>
-                    <option value="">Selecciona un filtro</option>
-                    <option value="test1">test1</option>
-                    <option value="test2">test2</option>
-                    <option value="test3">test3</option>
+                    <option value="">Selecciona un get funds</option>
+                    <option value="payment source">Payment source</option>
+                    <option value="destination seller">Destination Seller</option>
                 </select>
             </div>
             <div className="col-3 mt-3">
                 <label htmlFor="restrictAmount">Refund: Restrict amount</label>
                 <select className="form-control" name="restrictAmount" id="restrictAmount"
                         value={formData.restrictAmount} onChange={handleChange}>
-                    <option value="">Selecciona un filtro</option>
-                    <option value="test1">test1</option>
-                    <option value="test2">test2</option>
-                    <option value="test3">test3</option>
+                    <option value="">Selecciona un restrict amount</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select>
             </div>
             <div className="col-3 mt-3">
                 <label htmlFor="accessLevel">Access Level</label>
                 <select className="form-control" name="accessLevel" id="accessLevel"
                         value={formData.accessLevel} onChange={handleChange}>
-                    <option value="">Selecciona un filtro</option>
+                    <option value="">Selecciona un Access Level</option>
                     <option value="saima">Saima</option>
                     <option value="drim">Drim</option>
                     <option value="rituals">Rituals</option>
