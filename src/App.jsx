@@ -9,6 +9,7 @@ import Layout from "./components/Layout.jsx";
 import AccessLevel from "./pages/AccessLevel/AccessLevel.jsx";
 import AccessLevelCreate from "./pages/AccessLevel/AccessLevelCreate.jsx";
 import AccessLevelEdit from "./pages/AccessLevel/AccessLevelEdit.jsx";
+import AccessLevelView from "./pages/AccessLevel/AccessLevelView.jsx";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/" element={<Layout />}>
                     <Route path="accessLevel" element={<AccessLevel />} />
                     <Route path="accessLevel/new" element={<AccessLevelCreate />} />
+                    <Route path="accessLevel/view/:id" element={<AccessLevelView />} />
                     <Route path="accessLevel/edit/:id" element={<AccessLevelEdit />} />
                 </Route>
             </Routes>

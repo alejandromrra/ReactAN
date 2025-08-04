@@ -11,7 +11,7 @@ import {useParams} from "react-router-dom";
 
 const AccessLevelEdit = () => {
     const { id } = useParams();
-    const [accessLevel, setAccessLevel] = useState(AccessLevelModel);
+    const [accessLevel, setAccessLevel] = useState([]);
 
     useEffect(() => {
         (async () => {
