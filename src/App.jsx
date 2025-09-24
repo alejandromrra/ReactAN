@@ -10,6 +10,8 @@ import AccessLevel from "./pages/AccessLevel/AccessLevel.jsx";
 import AccessLevelCreate from "./pages/AccessLevel/AccessLevelCreate.jsx";
 import AccessLevelEdit from "./pages/AccessLevel/AccessLevelEdit.jsx";
 import AccessLevelView from "./pages/AccessLevel/AccessLevelView.jsx";
+import GameYear from "./pages/AXL/gameYear.jsx";
+import GameYearInfo from "./pages/AXL/gameYearInfo.jsx";
 
 function App() {
     return (
@@ -20,6 +22,7 @@ function App() {
                     <Route path="accessLevel/new" element={<AccessLevelCreate />} />
                     <Route path="accessLevel/view/:id" element={<AccessLevelView />} />
                     <Route path="accessLevel/edit/:id" element={<AccessLevelEdit />} />
+                    <Route index path="gameYear" element={<GameYear />} />
                 </Route>
             </Routes>
         </React.Fragment>
