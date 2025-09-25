@@ -1,0 +1,10 @@
+.app-input-gameYear {
+    background-color: #1e1e1e !important;
+    border-color: #e594ff !important;
+    color: #ffffff !important;
+    height: 70px;
+    font-size: 25px !important;
+}
+.app-input-gameYear::placeholder {
+    color: #ffffff !important;
+}
