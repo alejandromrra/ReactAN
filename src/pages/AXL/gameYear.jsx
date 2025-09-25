@@ -1,18 +1,15 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 // CSS
 import "/src/assets/css/GameYear/gameYear.css"
-import {Link} from "react-router-dom";
-
-// JS
-
 
 const GameYear = () => {
     return (
         <React.Fragment>
-            <div className="container-fluid">
-                <div className="row app-row-gameInfo">
-                    <div className="app-div-gameInfo">
+            <div className="container-fluid app-fluid-gameYear">
+                <div className="row app-row-gameYear">
+                    <div className="app-div-gameYear">
                         <div className="col-md-12">
                             <p>
                                 Aquí te explico cómo funciona:
@@ -22,7 +19,7 @@ const GameYear = () => {
                             </p>
                         </div>
                         <div className="col-md-12">
-                            <Link className="btn btn-primary w-100" to="/gameYear/init">Empezar a jugar</Link>
+                            <Link className="btn btn-primary w-100" to="/gameYear/1">Empezar a jugar</Link>
                         </div>
                     </div>
                 </div>

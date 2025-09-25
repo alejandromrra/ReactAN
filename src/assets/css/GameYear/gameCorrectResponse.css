@@ -1,0 +1,10 @@
+.app-div-gameCorrect {
+    padding: 10px;
+    border: 1px solid #11ff00 !important;
+    border-radius: 5px;
+}
+
+.app-div-gameCorrect .btn {
+    background: #11ff00 !important;
+    color: #fff ;
+}

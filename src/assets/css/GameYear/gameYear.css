@@ -1,7 +1,11 @@
-.app-row-gameInfo {
+.app-fluid-gameYear {
+    height: calc(100vh);
+}
+.app-row-gameYear {
+    height: 100%;
     padding: 400px !important;
 }
-.app-div-gameInfo {
+.app-div-gameYear {
     padding: 10px;
     border: 1px solid #e594ff;
     border-radius: 5px;

@@ -1,5 +1,5 @@
 import {Link, Outlet, useLocation} from 'react-router-dom';
-import React, {useState} from "react";
+import React, {useEffect} from "react";
 
 // Components
 import Header from './Header';
@@ -9,12 +9,18 @@ import Sidebar from './Sidebar';
 import "/src/assets/css/components/Layout.css";
 
 const Layout = () => {
-    //const { pathname } = useLocation();
-    const [visible, setVisible] = useState(true);
+    const pathname = useLocation().pathname;
 
-    const handleClick = () => {
-        setVisible(false); // lo escondemos al hacer click
-    };
+    useEffect(() => {
+        const gameYearArray = [
+            { id: 1, respuesta: "La Santa" },
+            { id: 2, respuesta: "" },
+            { id: 3, respuesta: "" },
+        ];
+
+        localStorage.setItem("gameYear", JSON.stringify(gameYearArray));
+        localStorage.setItem("lives", JSON.stringify(2));
+    });
 
     return (
         <React.Fragment>
@@ -29,9 +35,9 @@ const Layout = () => {
             </div>*/}
             <div className="container-fluid app-fluid">
                 <div className="row app-row">
-                    <main className="col-md-12">
-                        {visible && (
-                            <Link className="btn btn-primary w-50" to="/gameYear" onClick={handleClick}>PRESIONA EL BOTÓN</Link>
+                    <main>
+                        {pathname === "/"  && (
+                            <Link className="btn btn-primary w-50" to="/gameYear">PRESIONA EL BOTÓN</Link>
                         )}
                         <Outlet/>
                     </main>

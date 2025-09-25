@@ -1,5 +1,5 @@
 .app-fluid {
-    height: calc(100vh - 125px);
+    height: calc(100vh);
     background-color: #242424;
 }
 .app-row {
@@ -11,6 +11,7 @@ main {
     align-items: center;
     justify-content: center;
     color: white;
+    font-size: 25px;
 }
 
 #createAccessLevel {
@@ -22,7 +23,8 @@ main {
 
 .btn {
     height: 70px;
-    padding: 23px !important;
+    font-size: 25px !important;
+    padding: 15px !important;
     background-color: #e594ff !important;
     border: none !important;
 }

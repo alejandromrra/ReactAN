@@ -1,0 +1,14 @@
+.app-div-gameIncorrect {
+    padding: 10px;
+    border: 1px solid #ff0000 !important;
+    border-radius: 5px;
+}
+
+.app-div-gameYear .retry {
+    background: #ff0000 !important;
+    color: #fff ;
+}
+.app-div-gameYear .retire {
+    background: #00ffff !important;
+}
+
