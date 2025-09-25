@@ -15,7 +15,16 @@ const Layout = () => {
         const gameYearArray = [
             { id: 1, respuesta: "La Santa" },
             { id: 2, respuesta: "Mirador de Tres metros sobre el cielo" },
-            { id: 3, respuesta: "Rapunzel, Anillo Pandora, " },
+            { id: 3, respuesta: "Rapunzel, Anillo Pandora" },
+            { id: 4, respuesta: "Corazón" },
+            { id: 5, respuesta: "" },
+            { id: 6, respuesta: "" },
+            { id: 7, respuesta: "" },
+            { id: 8, respuesta: "" },
+            { id: 9, respuesta: "" },
+            { id: 10, respuesta: "" },
+            { id: 11, respuesta: "" },
+            { id: 12, respuesta: "" },
         ];
 
         localStorage.setItem("gameYear", JSON.stringify(gameYearArray));

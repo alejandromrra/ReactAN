@@ -7,14 +7,14 @@ import "/src/assets/css/GameYear/gameThirdQuest.css"
 const GameThirdQues = () => {
     const navigate = useNavigate();
 
-    const checkResponse = (valButton) => {
+    const checkResponse = (event) => {
         const data = localStorage.getItem("gameYear");
         const gameYearArray = JSON.parse(data);
 
-        const response = gameYearArray.find(ga => ga.id === 2);
+        const response = gameYearArray.find(ga => ga.id === 3);
 
-        if(response.respuesta === valButton) {
-            localStorage.setItem("numQuestion", JSON.stringify(3));
+        if(response.respuesta.includes(event.target.value)) {
+            localStorage.setItem("numQuestion", JSON.stringify(4));
             navigate("/gameYear/correctQuestion");
         } else {
             navigate("/gameYear/incorrectQuestion");
@@ -32,8 +32,9 @@ const GameThirdQues = () => {
                             </p>
                         </div>
                         <div className="col-md-12">
-                            <input className="form-control app-input-gameYear" type="text" placeholder="Introduce uno de tus regalos jejeje"/>
-                            <button className="btn btn-primary col-md-12 mt-2" onClick={() => checkResponse("")}>
+                            <input className="form-control app-input-gameYear" type="text"
+                                   placeholder="Introduce uno de tus regalos jejeje" onBlur={checkResponse}/>
+                            <button className="btn btn-primary col-md-12 mt-2">
                                 Enviar regalo
                             </button>
                         </div>

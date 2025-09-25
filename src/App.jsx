@@ -15,7 +15,8 @@ import GameFirstQues from "./pages/AXL/gameFirstQues.jsx";
 import GameCorrectResponse from "./pages/AXL/gameCorrectResponse.jsx";
 import GameIncorrectResponse from "./pages/AXL/gameIncorrectResponse.jsx";
 import GameSecondQues from "./pages/AXL/gameSecondQues.jsx";
-import GameThirdQues from "./pages/AXL/GameThirdQues.jsx";
+import GameThirdQues from "./pages/AXL/gameThirdQues.jsx";
+import GameFourthQues from "./pages/AXL/gameFourthQuest.jsx";
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                     <Route index path="gameYear/1" element={<GameFirstQues />} />
                     <Route index path="gameYear/2" element={<GameSecondQues />} />
                     <Route index path="gameYear/3" element={<GameThirdQues />} />
+                    <Route index path="gameYear/4" element={<GameFourthQues />} />
                     <Route index path="gameYear/correctQuestion" element={<GameCorrectResponse />} />
                     <Route index path="gameYear/incorrectQuestion" element={<GameIncorrectResponse />} />
                 </Route>
