@@ -8,10 +8,10 @@ const GameSecondQues = () => {
         const data = localStorage.getItem("gameYear");
         const gameYearArray = JSON.parse(data);
 
-        const response = gameYearArray.find(ga => ga.id = 1);
+        const response = gameYearArray.find(ga => ga.id === 2);
 
         if(response.respuesta === valButton) {
-            localStorage.setItem("numQuestion", JSON.stringify(response.id + 1));
+            localStorage.setItem("numQuestion", JSON.stringify(3));
             navigate("/gameYear/correctQuestion");
         } else {
             navigate("/gameYear/incorrectQuestion");
@@ -25,21 +25,21 @@ const GameSecondQues = () => {
                     <div className="app-div-gameYear">
                         <div className="col-md-12">
                             <p>
-
+                                Qur mirador fuimos por primera vez en nuestro segundo mes?
                             </p>
                         </div>
                         <div className="col-md-12">
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Brasa y Leña")}>
-
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("El Carmel")}>
+                                El Carmel
                             </button>
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("La Santa")}>
-                                La Santa
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Mirador de Can Boada")}>
+                                Mirador de Can Boada
                             </button>
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("La Tremenda")}>
-                                La Tremenda
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Mirador de Tres metros sobre el cielo")}>
+                                Mirador de Tres metros sobre el cielo
                             </button>
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Favela Burger")}>
-                                Favela Burger
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Mirador de Ullastrell")}>
+                                Mirador de Ullastrell
                             </button>
                         </div>
                     </div>

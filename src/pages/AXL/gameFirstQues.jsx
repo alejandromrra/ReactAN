@@ -8,12 +8,13 @@ const GameFirstQues = () => {
         const data = localStorage.getItem("gameYear");
         const gameYearArray = JSON.parse(data);
 
-        const response = gameYearArray.find(ga => ga.id = 1);
+        const response = gameYearArray.find(ga => ga.id === 1);
 
         if(response.respuesta === valButton) {
-            localStorage.setItem("numQuestion", JSON.stringify(response.id + 1));
+            localStorage.setItem("numQuestion", JSON.stringify(2));
             navigate("/gameYear/correctQuestion");
         } else {
+            localStorage.setItem("numQuestion", JSON.stringify(1));
             navigate("/gameYear/incorrectQuestion");
         }
     };

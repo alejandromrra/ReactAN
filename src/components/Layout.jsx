@@ -14,7 +14,7 @@ const Layout = () => {
     useEffect(() => {
         const gameYearArray = [
             { id: 1, respuesta: "La Santa" },
-            { id: 2, respuesta: "" },
+            { id: 2, respuesta: "Mirador de Tres metros sobre el cielo" },
             { id: 3, respuesta: "" },
         ];
 
