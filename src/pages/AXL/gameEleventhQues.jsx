@@ -4,17 +4,17 @@ import {useNavigate} from "react-router-dom";
 // CSS
 import "/src/assets/css/GameYear/gameThirdQuest.css"
 
-const GameSeventhQues = () => {
+const GameEleventhQues = () => {
     const navigate = useNavigate();
 
     const checkResponse = (valButton) => {
         const data = localStorage.getItem("gameYear");
         const gameYearArray = JSON.parse(data);
 
-        const response = gameYearArray.find(ga => ga.id === 7);
+        const response = gameYearArray.find(ga => ga.id === 11);
 
         if(response.respuesta === valButton) {
-            localStorage.setItem("numQuestion", JSON.stringify(8));
+            localStorage.setItem("numQuestion", JSON.stringify(12));
             navigate("/gameYear/correctQuestion");
         } else {
             navigate("/gameYear/incorrectQuestion");
@@ -28,21 +28,21 @@ const GameSeventhQues = () => {
                     <div className="app-div-gameYear">
                         <div className="col-md-12">
                             <p>
-                                En nuestra primera vez en el camping, a que restaurante te lleve?
+                                Que manulidad hicimos en el camping cuando estuvimos en verano?
                             </p>
                         </div>
                         <div className="col-md-12">
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Tagliatella")}>
-                                Tagliatella
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Spiderman y Stich")}>
+                                Spiderman y Stich
                             </button>
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Guiseppe")}>
-                                Guiseppe
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Piperman y Spichi")}>
+                                Piperman y Spichi
                             </button>
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("McDonals")}>
-                                McDonals
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Piper y Spich")}>
+                                Piper y Spich
                             </button>
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Restaurante del camping")}>
-                                Restaurante del camping
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Spiperman y Pichi")}>
+                                Spiperman y Pichi
                             </button>
                         </div>
                     </div>
@@ -52,4 +52,4 @@ const GameSeventhQues = () => {
     )
 }
 
-export default GameSeventhQues;
+export default GameEleventhQues;

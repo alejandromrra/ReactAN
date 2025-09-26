@@ -28,21 +28,21 @@ const GameEighthQues = () => {
                     <div className="app-div-gameYear">
                         <div className="col-md-12">
                             <p>
-                                De estas cosas que es lo que me compre en el primer viaje a Palermo?
+                                Antes de que te fueras te hice un regalo muy especial, cual fue?
                             </p>
                         </div>
                         <div className="col-md-12">
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Un llavero")}>
-                                Un llavero
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Una cena romantica")}>
+                                Una cena romantica
                             </button>
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Collar de perlas")}>
-                                Collar de perlas
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Unos zapatos")}>
+                                Unos zapatos
                             </button>
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Pantalon del pull and bear")}>
-                                Pantalon del pull and bear
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Un collar")}>
+                                Un collar
                             </button>
-                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Un patin")}>
-                                Un patin
+                            <button className="btn btn-primary col-md-12 mb-2" onClick={() => checkResponse("Un viaje")}>
+                                Un viaje
                             </button>
                         </div>
                     </div>

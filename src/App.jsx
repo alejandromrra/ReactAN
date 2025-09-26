@@ -23,6 +23,7 @@ import GameSeventhQues from "./pages/AXL/gameSeventhQues.jsx";
 import GameEighthQues from "./pages/AXL/gameEighthQues.jsx";
 import GameNineQues from "./pages/AXL/gameNineQues.jsx";
 import GameTenthQues from "./pages/AXL/gameTenthQues.jsx";
+import GameEleventhQues from "./pages/AXL/gameEleventhQues.jsx";
 
 function App() {
     return (
@@ -44,7 +45,7 @@ function App() {
                     <Route index path="gameYear/8" element={<GameEighthQues />} />
                     <Route index path="gameYear/9" element={<GameNineQues />} />
                     <Route index path="gameYear/10" element={<GameTenthQues />} />
-                    <Route index path="gameYear/11" element={<GameNineQues />} />
+                    <Route index path="gameYear/11" element={<GameEleventhQues />} />
                     <Route index path="gameYear/12" element={<GameNineQues />} />
                     <Route index path="gameYear/correctQuestion" element={<GameCorrectResponse />} />
                     <Route index path="gameYear/incorrectQuestion" element={<GameIncorrectResponse />} />
