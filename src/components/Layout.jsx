@@ -24,7 +24,7 @@ const Layout = () => {
             { id: 9, respuesta: "Collar de perlas" },
             { id: 10, respuesta: "Vinya Grill" },
             { id: 11, respuesta: "Piperman y Spichi" },
-            { id: 12, respuesta: "" },
+            { id: 12, respuesta: "Payo Papuin" },
         ];
 
         localStorage.setItem("gameYear", JSON.stringify(gameYearArray));
