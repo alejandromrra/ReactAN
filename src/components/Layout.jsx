@@ -20,9 +20,9 @@ const Layout = () => {
             { id: 5, respuesta: "Corazón" },
             { id: 6, respuesta: "Furius Baco" },
             { id: 7, respuesta: "Un viaje" },
-            { id: 8, respuesta: "" },
-            { id: 9, respuesta: "" },
-            { id: 10, respuesta: "" },
+            { id: 8, respuesta: "Collar de perlas" },
+            { id: 9, respuesta: "Vinya Grill" },
+            { id: 10, respuesta: "Piperman y Spichi" },
             { id: 11, respuesta: "" },
             { id: 12, respuesta: "" },
         ];
