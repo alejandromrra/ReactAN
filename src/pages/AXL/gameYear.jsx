@@ -12,10 +12,10 @@ const GameYear = () => {
                     <div className="app-div-gameYear">
                         <div className="col-md-12">
                             <p>
-                                Aquí te explico cómo funciona:
+                                Aquí te explico cómo funciona: <br/>
                                 Es un juego con 12 preguntas. Esas 12 preguntas son sobre nuestra relación y es una por cada mes del año, para saber lo atenta que has
-                                estado durante nuestro primer año.
-                                Con el juego te ganarás regalos: 1 al responder cada pregunta bien y 1 al final del juego.
+                                estado durante nuestro primer año. <br/>
+                                Con el juego te ganarás regalos: 1 al responder cada pregunta bien y 1 al final del juego. <br/>
                                 El trato sera que cada respuesta fallida sera 1 minuto que se sumara a un gogo que me haras. Trato o no?
                             </p>
                         </div>

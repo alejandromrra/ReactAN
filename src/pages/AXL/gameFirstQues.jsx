@@ -15,6 +15,12 @@ const GameFirstQues = () => {
             navigate("/gameYear/correctQuestion");
         } else {
             localStorage.setItem("numQuestion", JSON.stringify(1));
+
+            let gogoMinutes = localStorage.getItem("gogoMinutes");
+            let gogoMinutesInt = gogoMinutes ? parseInt(gogoMinutes) : 0;
+            gogoMinutesInt++;
+            localStorage.setItem("gogoMinutes", JSON.stringify(gogoMinutesInt));
+
             navigate("/gameYear/incorrectQuestion");
         }
     };

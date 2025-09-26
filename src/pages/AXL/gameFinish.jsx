@@ -10,7 +10,7 @@ const GameFinish = () => {
                             <p>
                                 Hasta aqui el juego rubita mia. Espero que lo hayas disfrutado mucho. <br/>
                                 Te has ganado el regalo final y ahora toca hacer el recuento de una cosa. <br/>
-                                Me debes {} minutos de gogo.
+                                Me debes {localStorage.getItem("gogoMinutes")} minutos de gogo.
                             </p>
                         </div>
                     </div>

@@ -17,15 +17,13 @@ const GameIncorrectResponse = () => {
                             <p>
                                 Respuestaaaaaa incorrectaaaaaa!!! <br/>
                                 MUECK MUECK MUEEEEECK <br/>
-                                Acabas de perder 1 vida, ahora solo te quedan {localStorage.getItem("lives")} vidas.
+                                Acabas de sumar 1 minuto al gogo, llevas {localStorage.getItem("gogoMinutes")} minutos. <br/>
+                                No te pongas nerviosa.
                             </p>
                         </div>
                         <div className="col-md-12">
                             <Link className="btn btn-primary w-100 mb-2 retry" to={"/gameYear/" + localStorage.getItem("numQuestion")}>
                                 Quieres volver a intentarlo?
-                            </Link>
-                            <Link className="btn btn-primary w-100 retire" to={"/gameYear/gameRetire"}>
-                                O quieres retirarte del juego y perder los regalos?
                             </Link>
                         </div>
                     </div>

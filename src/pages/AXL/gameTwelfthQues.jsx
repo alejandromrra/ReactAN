@@ -16,6 +16,11 @@ const GameTwelfthQues = () => {
         if(response.respuesta === valButton) {
             navigate("/gameYear/finish");
         } else {
+            let gogoMinutes = localStorage.getItem("gogoMinutes");
+            let gogoMinutesInt = gogoMinutes ? parseInt(gogoMinutes) : 0;
+            gogoMinutesInt++;
+            localStorage.setItem("gogoMinutes", JSON.stringify(gogoMinutesInt));
+
             navigate("/gameYear/incorrectQuestion");
         }
     };

@@ -28,7 +28,6 @@ const Layout = () => {
         ];
 
         localStorage.setItem("gameYear", JSON.stringify(gameYearArray));
-        localStorage.setItem("lives", JSON.stringify(2));
     });
 
     return (
