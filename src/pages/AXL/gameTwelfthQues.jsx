@@ -14,7 +14,7 @@ const GameTwelfthQues = () => {
         const response = gameYearArray.find(ga => ga.id === 12);
 
         if(response.respuesta === valButton) {
-            navigate("/gameYear/correctQuestion");
+            navigate("/gameYear/finish");
         } else {
             navigate("/gameYear/incorrectQuestion");
         }

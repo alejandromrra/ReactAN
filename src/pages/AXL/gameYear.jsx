@@ -15,8 +15,8 @@ const GameYear = () => {
                                 Aquí te explico cómo funciona:
                                 Es un juego con 12 preguntas. Esas 12 preguntas son sobre nuestra relación y es una por cada mes del año, para saber lo atenta que has
                                 estado durante nuestro primer año.
-                                Con el juego te ganarás 2 regalos: uno al responder las 6 primeras preguntas y otro al responder las 6 preguntas restantes.
-                                Tendrás 2 vidas al inicio, y se te recargará 1 vida al completar las primeras 6 preguntas.
+                                Con el juego te ganarás regalos: 1 al responder cada pregunta bien y 1 al final del juego.
+                                El trato sera que cada respuesta fallida sera 1 minuto que se sumara a un gogo que me haras. Trato o no?
                             </p>
                         </div>
                         <div className="col-md-12">
